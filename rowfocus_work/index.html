@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #parent {
+            position: absolute;
+            top: 400px;
+            left: calc(50% - 150px);
+            width: 300px;
+            height: 300px;
+            border: 3px solid black;
+            overflow: visible;
+        }
+        
+        #parent>#floater {
+            position: absolute;
+            /*float: left;*/
+            width: 100%;
+            height: 100px;
+            border: 1px solid magenta;
+            /*overflow: hidden;*/
+        }
+        
+        .focused {
+            border: 6px solid yellow !important;
+        }
+        
+        .item {
+            position: absolute;
+            height: 100px;
+            background-color: green;
+            border: 1px dotted red;
+            overflow: hidden;
+            width: 100%;
+            float: left;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 100px;
+        }
+        
+        #footer {
+            position: absolute;
+            top: 80%;
+            height: 20%;
+            width: 98%;
+            border: 1px solid blue;
+            overflow: hidden;
+        }
+    </style>
+
+</head>
+
+<body onload="Main.onload()">
+
+    <button id="upButton" class="btn btn-default">UpClick</button>
+    </br>
+    <button id="dnButton" class="btn btn-default">DownClick</button>
+
+
+    <div id="parent">
+        <div id="floater">
+            <div id="item0" class="item" style="top: 0px;display: block">item0</div>
+            <div id="item1" class="item focused" style="top: 100px;display: block">item1</div>
+            <div id="item2" class="item" style="top: 200px;display: block">item2</div>
+            <div id="item3" class="item" style="top: 300px">item3</div>
+            <div id="item4" class="item" style="top: 400px">item4</div>
+            <div id="item5" class="item" style="top: 500px">item5</div>
+            <div id="item6" class="item" style="top: 600px">item6</div>
+            <div id="item7" class="item" style="top: 700px">item7</div>
+            <div id="item8" class="item" style="top: 800px">item8</div>
+            <div id="item9" class="item" style="top: 900px">item9</div>
+        </div>
+    </div>
+    <!--<div id="footer"></div>-->
+
+    <script>
+        var currSel = 1;
+        for (var i = 5; i < 10; i++) {
+            $("#item" + i).css({
+                "display": 'none'
+            });
+        }
+
+        var lastIndex = 9;
+        var changeRow = function(direction) {
+            var blockOffset = 3;
+            var noneOffset = 3;
+            var offset = 2;
+
+            if (direction == "up") {
+                // if (currSel == 0) return;
+                for (var i = currSel - offset; i <= currSel + offset; i++) {
+                    if (i == currSel + offset) {
+                        $("#item" + i).css({
+                            "display": 'none'
+                        });
+                    } else {
+                        $("#item" + i).css({
+                            "display": 'block'
+                        });
+                        if (i == 0) return;
+                    }
+                }
+            } else { //down
+                for (var i = currSel - offset; i <= currSel + offset; i++) {
+                    // if (currSel == lastIndex) return;
+                    if (i == currSel - offset) {
+                        $("#item" + i).css({
+                            "display": 'none'
+                        });
+                    } else {
+                        $("#item" + i).css({
+                            "display": 'block'
+                        });
+                        if (i == 0) return;
+                    }
+                }
+            }
+        }
+
+        document.getElementById("upButton").addEventListener("click", function() {
+            if (currSel == 1) return;
+            var currTop = $("#floater").position().top;
+            console.log("upButton Clicked, currTop: " + currTop);
+            $("#floater").css({
+                "top": currTop + 100 + 'px'
+            });
+            $("#item" + currSel--).removeClass('focused');
+            $("#item" + currSel).addClass('focused');
+            changeRow("up");
+        });
+
+        document.getElementById("dnButton").addEventListener("click", function() {
+            if (currSel == lastIndex - 1) return;
+            var currTop = $("#floater").position().top;
+            console.log("dnButton Clicked, currTop: " + currTop);
+            $("#floater").css({
+                "top": currTop - 100 + 'px'
+            });
+            $("#item" + currSel++).removeClass('focused');
+            $("#item" + currSel).addClass('focused');
+            changeRow("down");
+        });
+    </script>
+</body>
+
+</html>
