@@ -1,0 +1,170 @@
+{
+    "code": 200,
+    "message": "Success",
+    "toplist": [{
+            "Electronics": [
+                [{
+                    "Mobile Phones": {
+                        "SubSubCat1": "cat1/subcat1/subsubcat1/index.html",
+                        "SubSubCat2": "cat1/subcat1/subsubcat2/index.html",
+                        "SubSubCat3": "cat1/subcat1/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Laptops": {
+                        "SubSubCat1": "cat1/subcat2/subsubcat1/index.html",
+                        "SubSubCat2": "cat1/subcat2/subsubcat2/index.html",
+                        "SubSubCat3": "cat1/subcat2/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Powerbanks": {
+                        "SubSubCat1": "cat1/subcat3/subsubcat1/index.html",
+                        "SubSubCat2": "cat1/subcat3/subsubcat2/index.html",
+                        "SubSubCat3": "cat1/subcat3/subsubcat3/index.html"
+                    }
+                }]
+            ]
+        },
+        {
+            "Appliances": [
+                [{
+                    "Washing Machines": {
+                        "SubSubCat1": "cat2/subcat1/subsubcat1/index.html",
+                        "SubSubCat2": "cat2/subcat1/subsubcat2/index.html",
+                        "SubSubCat3": "cat2/subcat1/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Televisions": {
+                        "Sony": "cat2/subcat2/subsubcat1/index.html",
+                        "Samsung": "cat2/subcat2/subsubcat2/index.html",
+                        "LG": "cat2/subcat2/subsubcat3/index.html",
+                        "Hisense": "cat2/subcat2/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Refrigerators": {
+                        "SubSubCat1": "cat2/subcat3/subsubcat1/index.html",
+                        "SubSubCat2": "cat2/subcat3/subsubcat2/index.html",
+                        "SubSubCat3": "cat2/subcat3/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Air conditioners": {
+                        "SubSubCat1": "cat2/subcat4/subsubcat1/index.html",
+                        "SubSubCat2": "cat2/subcat4/subsubcat2/index.html",
+                        "SubSubCat3": "cat2/subcat4/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Small home appliances": {
+                        "SubSubCat1": "cat2/subcat5/subsubcat1/index.html",
+                        "SubSubCat2": "cat2/subcat5/subsubcat2/index.html",
+                        "SubSubCat3": "cat2/subcat5/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Health care appliances": {
+                        "SubSubCat1": "cat2/subcat6/subsubcat1/index.html",
+                        "SubSubCat2": "cat2/subcat6/subsubcat2/index.html",
+                        "SubSubCat3": "cat2/subcat6/subsubcat3/index.html"
+                    }
+                }]
+            ]
+        },
+        {
+            "Baby & Kids": [
+                [{
+                    "Kids Clothing": {
+                        "SubSubCat1": "cat3/subcat1/subsubcat1/index.html",
+                        "SubSubCat2": "cat3/subcat1/subsubcat2/index.html",
+                        "SubSubCat3": "cat3/subcat1/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Baby Care": {
+                        "SubSubCat1": "cat3/subcat2/subsubcat1/index.html",
+                        "SubSubCat2": "cat3/subcat2/subsubcat2/index.html",
+                        "SubSubCat3": "cat3/subcat2/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Toys": {
+                        "SubSubCat1": "cat3/subcat3/subsubcat1/index.html",
+                        "SubSubCat2": "cat3/subcat3/subsubcat2/index.html",
+                        "SubSubCat3": "cat3/subcat3/subsubcat3/index.html"
+                    }
+                }]
+            ]
+        },
+        {
+            "Home & Furniture": [
+                [{
+                    "Chairs": {
+                        "SubSubCat1": "cat4/subcat1/subsubcat1/index.html",
+                        "SubSubCat2": "cat4/subcat1/subsubcat2/index.html",
+                        "SubSubCat3": "cat4/subcat1/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Tables": {
+                        "SubSubCat1": "cat4/subcat2/subsubcat1/index.html",
+                        "SubSubCat2": "cat4/subcat2/subsubcat2/index.html",
+                        "SubSubCat3": "cat4/subcat2/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Beds": {
+                        "SubSubCat1": "cat4/subcat3/subsubcat1/index.html",
+                        "SubSubCat2": "cat4/subcat3/subsubcat2/index.html",
+                        "SubSubCat3": "cat4/subcat3/subsubcat3/index.html"
+                    }
+                }]
+            ]
+        },
+        {
+            "Books": [
+                [{
+                    "Academics": {
+                        "SubSubCat1": "cat5/subcat1/subsubcat1/index.html",
+                        "SubSubCat2": "cat5/subcat1/subsubcat2/index.html",
+                        "SubSubCat3": "cat5/subcat1/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Novels": {
+                        "SubSubCat1": "cat5/subcat2/subsubcat1/index.html",
+                        "SubSubCat2": "cat5/subcat2/subsubcat2/index.html",
+                        "SubSubCat3": "cat5/subcat2/subsubcat3/index.html"
+                    }
+                }]
+            ]
+        },
+        {
+            "Gaming & Accessories": [
+                [{
+                    "Playstation": {
+                        "SubSubCat1": "cat6/subcat1/subsubcat1/index.html",
+                        "SubSubCat2": "cat6/subcat1/subsubcat2/index.html",
+                        "SubSubCat3": "cat6/subcat1/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Consoles": {
+                        "SubSubCat1": "cat6/subcat2/subsubcat1/index.html",
+                        "SubSubCat2": "cat6/subcat2/subsubcat2/index.html",
+                        "SubSubCat3": "cat6/subcat2/subsubcat3/index.html"
+                    }
+                }],
+                [{
+                    "Game DVDs": {
+                        "SubSubCat1": "cat6/subcat3/subsubcat1/index.html",
+                        "SubSubCat2": "cat6/subcat3/subsubcat2/index.html",
+                        "SubSubCat3": "cat6/subcat3/subsubcat3/index.html"
+                    }
+                }]
+            ]
+        }
+    ]
+}
