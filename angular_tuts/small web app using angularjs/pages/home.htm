@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <h4>Forecast by City</h4>
+        <select ng-model="city" class="form-control">
+			<option ng-repeat="x in cities" value="{{x}}">{{x}}</option>
+		</select>
+		<!-- <div class="btn-group">
+		  <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Action
+		  </button>
+		  <div class="dropdown-menu" ng-repeat="c in cities">
+		    <a class="dropdown-item" href="#">{{ c }}</a>
+		  </div>
+		</div> -->
+		<hr/>
+        <a href="#/forecast" class="btn btn-primary">Get Forecast</a>
+    </div>
+</div>
